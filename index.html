@@ -1,0 +1,48 @@
+{% extends 'template.html' %}
+{% block content %}
+<main>
+     <!-- myApp es la clase que da fondo blanco -->
+       <div class="myApp">
+         
+         <div id="info">
+             <p>
+             <b>Decenas de cursos</b>
+                 Escoge la categoría que te interese y empieza ya!
+             </p>
+         </div>
+             <a href="/cursos/programacion">
+                 <div class="contenedor bg-blue padding">
+                     <h2 class="align-center">Programación</h2>
+                 </div>
+             </a>
+             <a href="#">
+                 <div class="contenedor bg-blue padding">
+                     <h2 class="align-center">Diseño</h2>
+                 </div>
+            </a>
+             <a href="#">
+                 <div class="contenedor bg-blue padding">
+                     <h2 class="align-center">Historia</h2>
+                 </div>
+            </a>
+         </div>
+         <div id="about">
+         <br>
+                 <h2 class="padding align-center title montserrat-font border dark-blue-text bg-green">About</h2>
+                 <p>
+                     <b>Somos un repositorio</b> de todos los cursos de internet.
+                     Trabajamos día a día para hacer crecer nuestra lista de cursos. Tanto las categorías como los idiomas de cada curso. Porque queremos crear puentes que lleven conocimiento al mundo.
+                 </p>
+                 
+                 <p>
+                     <b>Y lo más importante ...</b>
+                     Para que estudiar esté a un solo click
+                 </p>
+                 
+                 <p>
+                     <b>Qué nos diferencia de otros Repositorios?</b>
+                     Lo que nos diferencia es que nos importas, y por eso queremos darte todos los cursos del mundo de la forma más divertida.
+                 </p>
+            </div>
+</main>
+{% endblock %}
