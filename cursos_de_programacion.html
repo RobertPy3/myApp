@@ -1,0 +1,58 @@
+{% extends 'template.html' %}
+{% block content %}
+<main>
+     <!-- myApp es la clase que da fondo blanco -->
+       <div class="myApp">
+         
+         <div id="info">
+             <p class="p">
+             <b>Decenas de cursos</b>
+                 Escoge la categoría que te interese y empieza ya!
+             </p>
+         </div>
+             <a href="/cursos/wtfHTMLCSSJS">
+                 <div class="contenedor bg-green padding">
+                     <h2 class="align-center">Qué es html css y js</h2>
+                 </div>
+             </a>
+             <a href="#">
+                 <div class="contenedor bg-blue padding">
+                     <h2 class="align-center">Cursos HTML</h2>
+                 </div>
+            </a>
+            <a href="#">
+                 <div class="contenedor bg-green padding">
+                     <h2 class="align-center">Cursos CSS</h2>
+                 </div>
+            </a>
+            <a href="#">
+                 <div class="contenedor bg-blue padding">
+                     <h2 class="align-center">Cursos JS</h2>
+                 </div>
+            </a>
+            <a href="#">
+                 <div class="contenedor bg-green padding">
+                     <h2 class="align-center">Cursos Python</h2>
+                 </div>
+            </a>
+            <a href="#">
+                 <div class="contenedor bg-blue padding">
+                     <h2 class="align-center">Cursos Calidad Programador</h2>
+                 </div>
+            </a>
+         </div>
+         
+		 <div class="">
+			<p class="raleway-font big-p">Envíanos links a cursos que te hayan servido</p>
+			
+			<div class="align-center">
+				<form action="/cursos/comentarios" method="post">
+					<input class="input" type="email" name="user" placeholder="exemple@exemple.bom" required><br>
+					<input class="input" type="text" name="message" placeholder="Curso" required><br>
+					<input class="button" type="submit" value="enviar">
+				</form>
+			</div>
+			
+		 </div>
+</main>
+{% endblock %}
